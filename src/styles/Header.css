@@ -1,0 +1,32 @@
+header {
+  background-color: #2d436f;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+  
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header-content p {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+  
