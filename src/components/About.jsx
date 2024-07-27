@@ -7,7 +7,7 @@ function About() {
   return (
     <section style={{ backgroundImage: `url(${aboutImage})` }}>
       <div className="overlay">
-        <h1>About Me</h1>
+        <h1>About Meeeeee</h1>
         <div className="info-block">
           <h2>Biography</h2>
           <p>I'm a systems engineering student at Universidad EIA, currently in 5th semester. My focus as a programmer is on backend development and data science. I am a person who does not like to close or limit myself to a single idea, I like to venture into topics that are not directly related to my career and contribute from my knowledge.</p>
