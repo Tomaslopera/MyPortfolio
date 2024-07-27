@@ -7,7 +7,7 @@
   }
   
   .overlay {
-    background: rgba(0, 0, 0, 0.7); /* Fondo con opacidad para el overlay */
+    background: rgba(0, 0, 0, 0.7);
     padding: 50px;
     border-radius: 8px;
     max-width: 1200px;
@@ -17,10 +17,10 @@
   }
   
   .projects-container {
-    display: flex; /* Usa flexbox para alinear elementos en columnas */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-    gap: 20px; /* Espacio entre las tarjetas de proyecto */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
   
   .project {
@@ -29,7 +29,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px; /* Ancho fijo para las tarjetas de proyecto */
+    width: 300px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -41,25 +41,45 @@
   }
   
   .project img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 100%;
+    height: auto;
     border-radius: 8px 8px 0 0;
   }
   
   .project button, .project a {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #275a91;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Elimina subrayado en los enlaces */
+    text-decoration: none;
     margin-top: 10px;
   }
   
   .project button:hover, .project a:hover {
     background-color: #0056b3;
+    color: white;
+  }
+
+  .project:hover .tech-logos img {
+    filter: brightness(0);
+    transform: scale(1.2);
+  }
+  
+  .tech-logos {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center; 
+  }
+  
+  .tech-logos img {
+    width: 40px; 
+    height: 40px;
+    filter: brightness(0) invert(1); 
+    transition: filter 0.3s ease, transform 0.3s ease;
   }
   

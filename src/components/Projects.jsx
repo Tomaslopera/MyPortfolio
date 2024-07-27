@@ -1,6 +1,10 @@
 import React from 'react';
-import '../styles/Projects.css'; 
+import '../styles/Projects.css';
 import projectsImage from '../assets/projects-background.jpg';
+import reactLogo from '../assets/react-logo.svg';
+import pythonLogo from '../assets/python-logo.svg';
+import sqlLogo from '../assets/sql-logo.png'
+import sqlServerLogo from '../assets/sqlServer-logo.png'
 
 function Projects() {
   return (
@@ -9,26 +13,37 @@ function Projects() {
         <h1>Projects</h1>
         <div className="projects-container">
           <div className="project">
-            <h2>Project Title</h2>
+            <h2>Recircular</h2>
             <p>Brief description of the project.</p>
-            <img src="path/to/project-image.jpg" alt="Project Image" />
-            <button>View Project</button>
+            <div className="tech-logos">
+              <img src={reactLogo} alt="React Logo" />
+              <img src={pythonLogo} alt="Python Logo" />
+              <img src={sqlLogo} alt="Sql Logo" />
+            </div>
+            <a href="https://github.com/Tomaslopera/Recircular" target='_blank'>Ver repositorio</a>
           </div>
           <div className="project">
-            <h2>Proyecto 2</h2>
+            <h2>Parkhub</h2>
             <p>Descripción breve...</p>
             <p>Tecnologías usadas: ...</p>
+            <div className="tech-logos">
+              <img src={reactLogo} alt="React Logo" />
+              <img src={pythonLogo} alt="Python Logo" />
+              <img src={sqlLogo} alt="Sql Logo" />
+            </div>
             <p>Mi rol y contribuciones: ...</p>
-            <img src="path/to/project-image.jpg" alt="Project Image" />
-            <button>View Project</button>
+            <a href="https://github.com/Tomaslopera/ParkHub" target='_blank'>Ver repositorio</a>
           </div>
           <div className="project">
-            <h2>Proyecto 3</h2>
+            <h2>Hospital DB</h2>
             <p>Descripción breve...</p>
             <p>Tecnologías usadas: ...</p>
+            <div className="tech-logos">
+              <img src={sqlLogo} alt="Sql Logo" />
+              <img src={sqlServerLogo} alt="SqlServer Logo" />
+            </div>
             <p>Mi rol y contribuciones: ...</p>
-            <a href="link-a-repositorio">Ver repositorio</a>
-            <img src="ruta/a/screenshot3.jpg" alt="Screenshot del proyecto" />
+            <a href="https://github.com/Tomaslopera/Hospital_DB" target='_blank'>Ver repositorio</a>
           </div>
         </div>
       </div>
