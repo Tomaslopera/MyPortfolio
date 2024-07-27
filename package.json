@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "ionicons": "^7.4.0",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-ionicons": "^1.5.7"
+    "react-ionicons": "^1.4.6"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

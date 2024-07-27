@@ -8,7 +8,7 @@
   
   .overlay {
     background: rgba(0, 0, 0, 0.7);
-    padding: 50px;
+    padding: 80px;
     border-radius: 8px;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,8 +30,10 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
+    flex-basis: 80%; /* Asegúrate de que tres proyectos quepan en una fila */
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
   }
   
   .project:hover {
@@ -48,7 +50,7 @@
   
   .project button, .project a {
     display: inline-block;
-    background-color: #275a91;
+    background-color: #46515d;
     color: white;
     padding: 10px 20px;
     border: none;
